@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.affereaflaw.uxdatabase.ChatView">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtMesssage"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="bottom">
+
+        <EditText
+            android:id="@+id/txtMesssage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:hint="Enter Message"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:layout_gravity="bottom"
+            android:id="@+id/btnSend"
+            android:background="@drawable/send"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginRight="16dp"/>
+    </LinearLayout>
+</LinearLayout>
